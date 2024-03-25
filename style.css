@@ -167,14 +167,17 @@ h2 {
 
 h3 {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
     margin-left: 20%;
     margin-right: 20%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
   /*  padding-right:100px;
     padding-bottom: 10px;
     */
+
 }
 h4 {
     color:rgba(89, 224, 11, 0.829); 
