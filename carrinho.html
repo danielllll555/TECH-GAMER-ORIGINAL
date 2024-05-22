@@ -10,27 +10,55 @@
 
 </head>
 <body>  
+    <header>  
 
-<header>
-    
-  <a href="index.html"> <h1> TECH GAMER </h1> </a>  
-        <nav>   
-            <a class="titulosnav corRed" href="perifericos.html">Periféricos</a> 
-            <a class="titulosnav corRed" href="hardware.html">Hardware</a> 
-            <a class="titulosnav corRed" href="monitores.html">Monitores</a> 
-            <a class="titulosnav corRed" href="cadeira.html">Cadeiras Gamer</a> 
-            <a class="botaocarrinho corRed" href="carrinho.html"> <img class="imgcarrinho" src="/icons8-shopping-cart-24.png"> CARRINHO</a>
+        <a href="index.html"> <h1> TECH GAMER </h1> </a>  
+              <nav>    
+                  <a class="titulosnav corRed" href="perifericos.html">  <img class="imgICone" src="icone perifericos.png">PERIFÉRICOS</a> 
+                  
+                  <a class="titulosnav corRed" href="hardware.html"> <img class="imgICone" src="cpu icone 3.png" alt="">HARDWARE</a> 
+      
+                  
+                  <a class="titulosnav corRed" href="monitores.html"> <img class="imgICone" src="icone monitor.png" alt="">MONITORES</a>
+                  
+                  
+                   
+                  <a class="titulosnav corRed" href="cadeira.html"> <img class="imgICone" src="icone Cadeira.png" alt="">CADEIRAS GAMER</a> 
+      
+                  <a class="botaocarrinho corRed" href="carrinho.html"> <img class="imgcarrinho" src="icons8-shopping-cart-24.png"> CARRINHO</a>
+      
+                  <a class="botaologin" href="login.html"> Login <img class="imglogin" src="login.png"> </a>
+                  
+                  <div class="divBusca">
+                      <input type="text" class="buscar2" placeholder="Buscar..."/>
+                      <button class="buttonBusca">Buscar</button>
+                  </div>
+                  
+              </nav>
+      
+      </header>
 
-            <a class="botaologin" href="login.html"> Login <img class="imglogin" src="/login.png"> </a>
-            
-            <div class="divBusca">
-                <input type="text" class="buscar2" placeholder="Buscar..."/>
-                <button class="buttonBusca">Buscar</button>
-            </div>
-            
-        </nav>
 
-</header>
+<script>
+    function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  var produtosSelecionados = JSON.parse(getParameterByName('produtosSelecionados'));
+  var total = parseFloat(getParameterByName('total'));
+
+  document.write("<p>Produtos selecionados: " + produtosSelecionados.join(", ") + "</p>");
+  document.write("<p>Total: R$" + total.toFixed(2) + "</p>");
+</script>
+
+
+  <script src="slide.js"></script>
 
 </body>
 </html>
