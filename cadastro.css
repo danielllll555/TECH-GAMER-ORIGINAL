@@ -3,13 +3,16 @@
    /*PARTE CADASTRO */
 
    form {
-    max-width: 400px;
-    background-color: #fff;
+    max-width: 10%;
     border-radius: 8px;
-    padding: 20px;
+    padding-left: 400PX;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    margin-top: 10%;
 }
-
+.form-group{
+    margin: 10px;
+}
 h2 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -17,6 +20,9 @@ h2 {
 
 label {
     font-weight: bold;
+    font-size: 20px;
+    color: white;
+
 }
 
 input[type="email"] {
@@ -40,5 +46,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
+.cadastrar {
+    margin-left: 8%;
+}
    /*PARTE CADASTRO */
+
+
