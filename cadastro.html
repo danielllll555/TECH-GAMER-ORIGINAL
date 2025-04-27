@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons8-shopping-cart-24.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnocom SP -A CASA DO HARDWARE</title>
 
+    <link
+      rel="shortcut icon"
+      href="icons8-shopping-cart-24.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <h1>Tecnocom SP</h1> </a>
+      <nav>
+        <a class="titulosnav corRed" href="perifericos.html">
+          <img class="imgICone" src="icone perifericos.png" />PERIFÉRICOS</a
+        >
 
-</head>
-<body>
-   
-<header>  
+        <a class="titulosnav corRed" href="hardware.html">
+          <img class="imgICone" src="cpu icone 3.png" alt="" />HARDWARE</a
+        >
 
-    <a href="index.html"> <h1> TECH GAMER </h1> </a>  
-          <nav>    
-              <a class="titulosnav corRed" href="perifericos.html">  <img class="imgICone" src="icone perifericos.png">PERIFÉRICOS</a> 
-              
-              <a class="titulosnav corRed" href="hardware.html"> <img class="imgICone" src="cpu icone 3.png" alt="">HARDWARE</a> 
-  
-              
-              <a class="titulosnav corRed" href="monitores.html"> <img class="imgICone" src="icone monitor.png" alt="">MONITORES</a>
-              
-              
-               
-              <a class="titulosnav corRed" href="cadeira.html"> <img class="imgICone" src="icone Cadeira.png" alt="">CADEIRAS GAMER</a> 
-  
-              <a id="linkCarrinho" class="botaocarrinho corRed" href="carrinho.html"> 
-                  <img class="imgcarrinho" src="icons8-shopping-cart-24.png"> 
-                  CARRINHO</a>
-  
-        
-  
-  
-              <a class="botaologin" href="login.html"> Login <img class="imglogin" src="login.png"> 
-              </a>
-  
-              
-              <div class="divBusca">
-                  <input type="text" class="buscar2" placeholder="Buscar..."/>
-              <button class="buttonBusca">Buscar</button>
-  
-              <a id="total"></a>
-  
-              </div>
-              
-          </nav>
-  
-  </header>
-  
-  
+        <a class="titulosnav corRed" href="monitores.html">
+          <img class="imgICone" src="icone monitor.png" alt="" />MONITORES</a
+        >
 
-    <div class="form-container">
-        <h2>Cadastro de clientes</h2>
-        <form id="cadastroForm">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
+        <a class="titulosnav corRed" href="cadeira.html">
+          <img class="imgICone" src="icone Cadeira.png" alt="" />CADEIRAS</a
+        >
 
-            <div class="form-group">
-                <label for="rg">RG:</label>
-                <input type="text" id="rg" name="rg" required>
-            </div>
+        <a class="botaocarrinho corRed" href="carrinho.html">
+          <img class="imgcarrinho" src="icons8-shopping-cart-24.png" />
+          CARRINHO</a
+        >
 
-            <div class="form-group">
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" id="dataNascimento" name="dataNascimento" required>
-            </div>
+        <a class="botaologin" href="login.html">
+          Login <img class="imglogin" src="login.png" />
+        </a>
 
-            <div class="form-group">
-                <label for="rua">Rua:</label>
-                <input type="text" id="rua" name="rua" required>
-            </div>
+        <div class="divBusca">
+          <input type="text" class="buscar2" placeholder="Buscar..." />
+          <button class="buttonBusca">Buscar</button>
+        </div>
+      </nav>
+    </header>
 
-            <div class="form-group">
-                <label for="bairro">Bairro:</label>
-                <input type="text" id="bairro" name="bairro" required>
-            </div>
-
-            <div class="form-group">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" required>
-            </div>
-
-            <div class="form-group">
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required>
-            </div>
-
-            <div class="form-group">
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" required>
-            </div>
-
-            <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-            </div>
-
-            <input class="cadastrar" type="submit" value="Cadastrar">
-        </form>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
+    <form>
+      <h3>Cadastro</h3>
 
-   
-    <script src="registro.js"></script>
-</body>
+      <label for="username">Email</label>
+      <input type="text" placeholder="Digite seu email" id="username" />
+
+      <label for="password">Senha</label>
+      <input type="password" placeholder="Digite sua senha" id="password" />
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" required>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <button class="fazerLogin">Cadastro</button>
+
+
+       
+      </div>
+    </form>
+  </body>
 </html>
