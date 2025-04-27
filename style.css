@@ -52,7 +52,7 @@ header {
 
 
 .botaocarrinho {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 195, 255);
   display: inline-block; /*  tag adicionada para poder ser feita alteração na altura*/
   height: 60px;
   padding-left: 5px; /* tag adicionada para ser ajustado a largura */
@@ -76,7 +76,7 @@ header {
   line-height: 60px; /* tag usada para centralizar linha na vertical, valor deve ser o mesmo de altura */
   box-shadow: 10px 10px 2px #000000;
   padding-left: 10px; /* tag adicionada para ser ajustado a largura */
-  background-color: green;
+  background-color: rgb(0, 195, 255);
   border-radius: 12px;
 }
 
@@ -154,7 +154,7 @@ a {
 }
 
 .titulosnav:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 195, 255);
 }
 .titulosnav {
   /* border: 2px solid rgb(89, 72, 72);* ; /* cor dos circulos */
@@ -170,7 +170,7 @@ h1 {
   text-decoration: none;
   padding-left: 25px;
   padding-top: 25px;
-  background: -webkit-linear-gradient(left, rgb(255, 0, 0) 68%, #ffffff 32%);
+  background: -webkit-linear-gradient(left, rgb(0, 195, 255) 68%, #ffffff 32%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: subir-descer 2s ease-in-out infinite;
@@ -197,7 +197,7 @@ h3 {
     */
 }
 h4 {
-  color: rgba(89, 224, 11, 0.829);
+  color: rgb(0, 195, 255);
   font-size: 30px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -219,7 +219,11 @@ h5 {
   display: flex;
   margin-left: 5%;
   margin-right: 5%;
-  position: relative;
+  position:static;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px
+
 }
 
 .divGeral img {
@@ -240,7 +244,7 @@ h5 {
   margin-top: -100px;
 }
 button {
-  background-color: rgba(89, 224, 11, 0.493);
+  background-color: rgba(2, 14, 255, 0.76);
   color: rgb(255, 246, 246);
   box-shadow: 5px 5px 5px #000000;
   font-size: 25px;
